@@ -447,9 +447,9 @@ class TargetBoard(ui.ThinBoard):
 		if app.ENABLE_TARGET_INFORMATION_SYSTEM:
 			infoButton = ui.Button()
 			infoButton.SetParent(self)
-			infoButton.SetUpVisual("d:/ymir work/ui/game/mark/question_mark_1.tga")
-			infoButton.SetOverVisual("d:/ymir work/ui/game/mark/question_mark_2.tga")
-			infoButton.SetDownVisual("d:/ymir work/ui/game/mark/question_mark_3.tga")
+			infoButton.SetUpVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
+			infoButton.SetOverVisual("d:/ymir work/ui/pattern/q_mark_02.tga")
+			infoButton.SetDownVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
 			infoButton.SetEvent(ui.__mem_func__(self.OnPressedInfoButton))
 			infoButton.Hide()
 
