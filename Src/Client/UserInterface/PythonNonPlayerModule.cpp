@@ -217,3 +217,31 @@ PyObject* nonplayerGetMobResist(PyObject* poSelf, PyObject* poArgs)
 		{"GetMobGoldMax",				nonplayerGetMobGoldMax,				METH_VARARGS},
 		{"GetResist",					nonplayerGetMobResist,				METH_VARARGS},
 #endif
+
+// Arat
+
+PyModule_AddIntConstant(poModule, "PAWN", NRaceData::EMobRank::MOB_RANK_PAWN);
+PyModule_AddIntConstant(poModule, "S_PAWN", NRaceData::EMobRank::MOB_RANK_S_PAWN);
+PyModule_AddIntConstant(poModule, "KNIGHT", NRaceData::EMobRank::MOB_RANK_KNIGHT);
+PyModule_AddIntConstant(poModule, "S_KNIGHT", NRaceData::EMobRank::MOB_RANK_S_KNIGHT);
+PyModule_AddIntConstant(poModule, "BOSS", NRaceData::EMobRank::MOB_RANK_BOSS);
+PyModule_AddIntConstant(poModule, "KING", NRaceData::EMobRank::MOB_RANK_KING);
+
+// Altına ekle varsa ekleme geç
+
+#ifdef ENABLE_TARGET_INFORMATION_SYSTEM
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_SWORD", CPythonNonPlayer::MOB_RESIST_SWORD);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_TWOHAND", CPythonNonPlayer::MOB_RESIST_TWOHAND);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_DAGGER", CPythonNonPlayer::MOB_RESIST_DAGGER);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_BELL", CPythonNonPlayer::MOB_RESIST_BELL);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_FAN", CPythonNonPlayer::MOB_RESIST_FAN);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_BOW", CPythonNonPlayer::MOB_RESIST_BOW);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_FIRE", CPythonNonPlayer::MOB_RESIST_FIRE);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_ELECT", CPythonNonPlayer::MOB_RESIST_ELECT);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_MAGIC", CPythonNonPlayer::MOB_RESIST_MAGIC);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_WIND", CPythonNonPlayer::MOB_RESIST_WIND);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_POISON", CPythonNonPlayer::MOB_RESIST_POISON);
+    PyModule_AddIntConstant(poModule, "MOB_RESIST_MAX_NUM", CPythonNonPlayer::MOB_RESISTS_MAX_NUM);
+#endif
+
+// Not: } den öncesine ekliyceksin.
