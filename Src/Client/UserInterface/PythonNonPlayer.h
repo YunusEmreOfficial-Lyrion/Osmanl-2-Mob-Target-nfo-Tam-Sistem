@@ -20,3 +20,22 @@
 	DWORD				GetMobGoldMin(DWORD dwVnum);
 	DWORD				GetMobGoldMax(DWORD dwVnum);
 #endif
+
+// Arat
+
+enum EMobResists
+
+// Altına ekle -- Hepsini kopyaladım olanları geç, olmayanları ekle
+
+            MOB_RESIST_SWORD,
+            MOB_RESIST_TWOHAND,
+            MOB_RESIST_DAGGER,
+            MOB_RESIST_BELL,
+            MOB_RESIST_FAN,
+            MOB_RESIST_BOW,
+            MOB_RESIST_FIRE,
+            MOB_RESIST_ELECT,
+            MOB_RESIST_MAGIC,
+            MOB_RESIST_WIND,
+            MOB_RESIST_POISON,
+            MOB_RESISTS_MAX_NUM
