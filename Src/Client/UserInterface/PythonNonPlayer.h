@@ -39,3 +39,36 @@ enum EMobResists
             MOB_RESIST_WIND,
             MOB_RESIST_POISON,
             MOB_RESISTS_MAX_NUM
+
+// Not: Eğer enum EMobResists bu yoksa aşağıdakileri yap. Varsa yukardakini
+
+// Arat
+
+        enum EMobEnchants
+        {   
+            MOB_ENCHANT_CURSE,
+            MOB_ENCHANT_SLOW,   
+            MOB_ENCHANT_POISON,
+            MOB_ENCHANT_STUN,   
+            MOB_ENCHANT_CRITICAL,
+            MOB_ENCHANT_PENETRATE,
+            MOB_ENCHANTS_MAX_NUM
+        };
+
+// Altına ekle
+
+        enum EMobResists
+        {
+            MOB_RESIST_SWORD,
+            MOB_RESIST_TWOHAND,
+            MOB_RESIST_DAGGER,
+            MOB_RESIST_BELL,
+            MOB_RESIST_FAN,
+            MOB_RESIST_BOW,
+            MOB_RESIST_FIRE,
+            MOB_RESIST_ELECT,
+            MOB_RESIST_MAGIC,
+            MOB_RESIST_WIND,
+            MOB_RESIST_POISON,
+            MOB_RESISTS_MAX_NUM
+        };
